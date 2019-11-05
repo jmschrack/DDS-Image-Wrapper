@@ -6,7 +6,7 @@ A simple C# class that wraps a byte[] from a ".dds" image file and provides help
 
 ```
 DDSImage image = new DDSImage(System.IO.File.ReadAllBytes("Grasslands.dds"));
-Console.WriteLine(string.Format("Loaded Image: {0}x{1}  Format:{2}",image.Width,image.Height,image.pixelFormat.ToString()));
+Console.WriteLine(string.Format("Loaded Image: {0}x{1}  Format:{2}",image.Width,image.Height,image.GetPixelFormatFourCC().ToString()));
 ```
 
 ## Unity3D Extensions
